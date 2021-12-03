@@ -1,0 +1,19 @@
+.borderstyle{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    width:200px;
+    padding: 7px;
+}
+img{
+    width:100%;
+}
+.grey-text{
+    color :grey
+}
+.green-text{
+    color :green
+}
+span{
+    text-decoration: underline;
+}
