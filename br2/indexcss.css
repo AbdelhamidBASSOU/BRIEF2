@@ -167,3 +167,8 @@ ul.breadcrumb li+li:before {
 
   
 }
+@media print {
+  nav{
+    display: none !important;
+  }
+}
