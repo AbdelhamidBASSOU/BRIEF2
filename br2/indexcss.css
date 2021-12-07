@@ -21,7 +21,7 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display:inline-block;
-  padding: 0%; 
+  padding: 15px; ; 
   font-size: 10px;
   margin:0;
 
@@ -55,8 +55,10 @@ ul.breadcrumb li a:hover {
   border-color: black;
   border-width: 2px;
   border-style: solid;
-  width:100%;
+  width:80%;
   padding: 7px;
+  margin: auto;
+  margin-top: 30px;
 }
 img{
   width:100%;
@@ -72,9 +74,96 @@ span{
  
 }
 .smaller-image{
-width:200px ;
-
+display: block;
+margin: auto ;
+text-align: center;
+width: 150px;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 .sfs{
-    display: flex;
+  display: flex;
+}
+.alts{
+  align-items: none;
+}
+@media screen and (min-width:900px) {
+  *{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.borderstyle{
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  width:200px;
+  padding: 7px;
+  display: inline-block;
+}
+.alts{
+  align-items:center;
+}
+.uldisplay{
+  box-sizing: content-box;
+  text-align:justify;
+    border: none;
+    display:inline-flex;
+    font-size: 15px;
+    padding: none;
+    float:left;
+    width: 60%;
+    padding: 45px;
+}
+
+.smaller-image{
+  text-align: none;
+}
+.logo{
+  float: left;
+  width: 15%;
+}
+.clear{clear: both;}
+
+}
+@media screen and (min-width:600px){
+
+  .uldisplay{
+    box-sizing: content-box;
+    text-align:justify;
+      border: none;
+      display:inline-flex;
+      font-size: 15px;
+      padding: none;
+      float:left;
+      width: 40%;
+      padding: 20px;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    align-items: center;
+  }
+  .mrg{
+    margin: 5%;
+  }
+  a:hover {
+    text-decoration: underline;
+    background-color: rgb(179, 143, 212);
+  }
+
+  
 }
