@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf_8">
+        <link href="STLMM.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            Formulaire d'immobilier
+        </title>
+        </head>
+
+        <body>
+            <header>
+                <a href="#"><img src="https://t3.ftcdn.net/jpg/00/29/26/66/360_F_29266699_Ff6ZtquKp7loWB4sY4VIbof77rqA4jl9.jpg" alt="LOGO" style="max-width: 120px;"></a>
+                <ul class="txt">
+                    <li><a href=""><strong>Home</strong></a></li>
+                    <li ><a href=""><strong>Contact</strong></a></li>
+                    <li><a href=""><strong>About</strong></a></li>
+                </ul>
+            </header>
+            <div class="xwx">
+                <h1>Immobilier Maroc </h1>
+                <p> 136,881 properties in Morocco : find an apartment for a house for sale </p>
+            </div>
+            <div class="pxp">
+                <h2>Formulaire de recherche</h2>
+                <form action="ma-page-de-traitement.php" method="post">
+                    <div>
+                        <label for="prix">fourchette de prix :</label>
+                        <input type="text" id="prix" name="prix">
+                    </div><br>
+                    <div>
+                        <label for="cowbell">rayon de recherche</label>
+                        <input type="range" id="rayon" name="rayon_recherche" 
+                               min="0" max="100000" value="90" step="1">
+                      </div><br>
+                    <div>
+                        <label for="chambre">chambre :</label>
+                        <input type="number" id="chambre" name="chambre" min="1" max="10">
+                    </div><br>
+                    <div>
+                        <label for="prpType">Type de propriété</label>
+                        <select name="prpType" id="proprietyType"> 
+                                <option value="co">copropriété</option>
+                                <option value="ddp">démembrement de propriété</option>
+                                <option value="ind">indivision</option>
+                                <option value="vvt">Viager et vente à terme</option>
+                              </select>
+                    </div><br>
+                    <button type="button">
+                         Recherche
+                           </button>
+                </form>
+            </div>
+        </body>
