@@ -10,8 +10,8 @@ body{
     background-repeat: no-repeat;
 }
 .txt{
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     padding: 30px;
     margin: 30px;
     position: relative;left:550px; top:-125px;
